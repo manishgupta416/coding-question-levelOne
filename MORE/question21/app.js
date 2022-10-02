@@ -1,0 +1,10 @@
+// const showOutput = document.querySelector('.show-output')
+const imh = document.querySelector("#image")
+fetch("https://random.dog/woof.json?ref=apilist.fun")
+.then(res => res.json())
+.then(data =>{console.log(data.url)
+console.log(data)
+imh.src = `${data.url}` })
+.catch(err => {
+    console.log(err.name)
+})

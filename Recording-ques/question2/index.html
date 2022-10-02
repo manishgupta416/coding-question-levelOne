@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Here is an API: https://otpgenerator.ishanjirety.repl.co/get-otp?name= . You will enter a name as input from your app and send this API a request with the name along with it
+(this will be the final URL : https://otpgenerator.ishanjirety.repl.co/get-otp?name=Nameentered) on button click . In the response you will get an OTP which should be shown on
+the screen.
+Followup1: Make another input section that asks the user to guess the OTP and for checking whether the guess is equal to the actual one or not add a button "Validate" which
+on clicking shows the message "Success " or "Failure" depending . Response is coming in the form of Name-OTP format so something like Pratyush-570928.So compare the
+OTP value from the response as well as the input which is being entered -->
+<label for="input-name">Input name</label>
+<input id="input-txt"type="text">
+<button id="api-call">Fetch Data</button>
+<div class="show-msg"></div>
+<label for="input-name">Input name to guess</label>
+<input id="guess-input"type="text">
+<button class="validate">Validate</button>
+    <script src="./app.js"></script>
+</body>
+</html>
